@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+.carGame{
+    width: 100vw;
+    height: 100vh;
+}
+.score{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+.startScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: grid;
+    place-items: center;
+    z-index: 3;
+}
+.playerScore{
+    width: 280px;
+    padding: 20px 25px;
+    background: #fff;
+    text-align: center;
+    border-radius: 3px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: red;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.menu{
+    margin-top: 30px;
+    width: 280px;
+    height: 350px;
+    padding: 20px 25px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.title{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 2px;                
+}
+.startBtn{
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.startBtn:hover{
+    transform: scale(1.1);
+    color: green;
+}
+.rules{
+    margin-top: 30px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 1.8rem;
+}
+.gameArea{
+    position: relative;
+    margin: auto;
+    width: 400px;
+    height: 100vh;
+    background: #262626;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8), 0px 0px 100px rgba(0, 0, 0, 0.2);
+}
+.car{
+    position: absolute;
+    width: 60px;
+    height: 129px;
+    bottom: 10px;
+    left: 20%;
+    z-index: 1;
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.5));
+}
+.lines{
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background: #fff;
+    margin-left: 195px;
+}
+.lineLeft{
+    position: absolute;
+    left: 10px;
+    width: 5px;
+    height: 100%;
+    background: #fff;
+}
+.lineRight{
+    position: absolute;
+    right: 10px;
+    width: 5px;
+    height: 100%;
+    background: #fff;
+}
+.enemy{
+    position: absolute;
+    width: 60px;
+    height: 129px;
+    bottom: 10px;
+    left: 20%;
+    z-index: 1;
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.5));
+}
+.hide{
+    display: none;
+}
+@media(max-width: 1200px){
+}
+@media(max-width: 992px){
+}
+@media(max-width: 992px){
+    .score{
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+}
+@media(max-width: 768px){
+}
+@media(max-width: 540px){
+    .gameArea .leftScreen{
+        background: rgba(0, 0, 0, 0.01);
+        width: 50%;
+        height: 100%;
+        z-index: 2;
+    }
+    .gameArea .rightScreen{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.01);
+        width: 50%;
+        height: 100%;
+        z-index: 2;
+    }
+    .car{
+        bottom: 60px;
+    }
+}
+@media(max-width: 400px){
+    .startScreen{
+        width: 100%;
+        /*padding: 0 10px*/
+    }
+    .gameArea{
+        width: 90%;
+    }
+    .playerScore{
+        width: 250px;
+        padding: 30px 20px;
+    }
+    .menu{
+        width: 250px;
+        padding: 30px 20px;
+    }
+    .lines{
+        margin-left: 50%;
+    }
+}

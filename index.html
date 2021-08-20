@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Traffic Driver Game</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body style="background-image: url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;">
+        <div class="carGame">
+            <div class="score hide"></div>
+            <div class="startScreen">
+                <div class="menuScreen">
+                    <div class="playerScore hide"></div>
+                    <div class="menu">
+                        <div class="title">Game Menu</div>
+                        <div class="startBtn">Start Game</div>
+                        <div class="rules">
+                            <p>
+                                <strong>Rules:</strong> <br />
+                                Use arrow key to move.<br />
+                                If you hit another car you wil lose.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameArea"></div>
+        </div>
+    </body>
+    <script src="./js/gameplay.js"></script>
+</html>
